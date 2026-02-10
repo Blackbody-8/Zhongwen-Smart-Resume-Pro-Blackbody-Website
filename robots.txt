@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /temp/
+Disallow: /cache/
+
+# Specific for Baidu
+User-agent: Baiduspider
+Allow: /
+
+Sitemap: https://zh.smartresumepro.com/sitemap.xml

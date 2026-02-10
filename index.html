@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Resume Pro - 专业简历生成器 | 隐私保护与即时排版</title>
+    <meta name="description" content="Smart Resume Pro 是一款由美国本土开发、专为求职者设计的智能简历工具。支持一键生成符合美国/加拿大标准的 ATS 友好型 Word 文档，保护隐私，无数据留存。">
+    <meta name="keywords" content="简历制作, 在线简历, 简历模板, Word简历下载, 隐私保护, 智能排版, 北美简历, 美式简历">
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="canonical" href="https://zh.smartresumepro.com/" />
+
+    <link rel="alternate" hreflang="zh-Hans" href="https://zh.smartresumepro.com/" />
+    <link rel="alternate" hreflang="en" href="https://smartresumepro.com/" />
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e293b;
+            --light: #f8fafc;
+            --text-dark: #334155;
+            --text-light: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .nav-btn {
+            background-color: var(--primary);
+            color: white;
+            padding: 0.5rem 1.2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .nav-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        .hero {
+            padding: 4rem 5%;
+            text-align: center;
+            background-color: var(--light);
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-light);
+            margin-bottom: 2.5rem;
+            max-width: 650px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1.1rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .features {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            background: #fff;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 0.5rem;
+            color: var(--secondary);
+        }
+
+        .privacy-banner {
+            background-color: var(--secondary);
+            color: white;
+            text-align: center;
+            padding: 3rem 5%;
+        }
+
+        .privacy-banner h2 {
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f1f5f9;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .features { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Smart Resume Pro</div>
+        <a href="https://resumebuilderpy-puwkqmoskvdljojvxfgj2t.streamlit.app/" class="nav-btn">开始创建</a>
+    </nav>
+
+    <section class="hero">
+        <h1>专业北美风格简历，为您精心排版</h1>
+        <p>本工具由美国本土团队开发，专门用于生成符合美国与加拿大职场标准的专业简历。通过智能格式化，为您提供简洁且适配 ATS 系统（申请人追踪系统）的 Word 文档。隐私优先设计，零数据留存。</p>
+        
+        <a href="https://resumebuilderpy-puwkqmoskvdljojvxfgj2t.streamlit.app/" class="cta-button">立即创建我的简历</a>
+        <p style="font-size: 0.9rem; margin-top: 10px; color: var(--text-light);">单次生成仅需 ¥9.90。价格仅相当于一杯咖啡。无订阅费用。</p>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <span class="icon">🔒</span>
+            <h3>隐私至上</h3>
+            <p>我们坚信隐私的重要性。您的数据仅用于生成文档，绝不留存或售卖。</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">📄</span>
+            <h3>导出 Word 文档</h3>
+            <p>获取完全可编辑的 .docx 文件。完美契合美国/加拿大招聘中对 Word 格式及北美排版风格的要求。</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">⚡</span>
+            <h3>即时排版</h3>
+            <p>无需再为页边距烦恼。只需输入信息，本程序将自动处理布局、边框和间距，确保符合北美职业规范。</p>
+        </div>
+    </section>
+
+    <section style="padding: 4rem 5%; background-color: #fff; text-align: center;">
+        <h2 style="color: var(--secondary); margin-bottom: 1.5rem;">我们的故事</h2>
+        <p style="max-width: 800px; margin: 0 auto; font-size: 1.1rem; color: var(--text-dark);">
+            2025 年底，在被公司裁员后，我深刻体会到了在现代求职市场中脱颖而出的难度。我开发这款工具是为了赋予广大求职者更强的竞争力。通过提供符合北美专业标准的简历，我希望能帮助大家赢得更多面试机会，在职场竞争中留下完美的初次印象。
+        </p>
+    </section>
+
+    <section class="privacy-banner">
+        <h2>我们的隐私承诺</h2>
+        <p>本工具旨在尊重您的个人信息。作为一家总部位于美国的服务商，我们不会追踪您的行为，也不会存储您的简历数据。</p>
+    </section>
+
+    <footer>
+        <div style="margin-bottom: 1rem;">
+            <a href="privacy.html" style="color: #64748b; margin: 0 10px; text-decoration: none;">隐私政策</a> | 
+            <a href="terms.html" style="color: #64748b; margin: 0 10px; text-decoration: none;">服务条款</a> |
+            <a href="support.html" style="color: #64748b; margin: 0 10px; text-decoration: none;">客户支持</a>
+        </div>
+        <p>&copy; 2026 Smart Resume Pro。保留所有权利。</p>
+    </footer>
+
+</body>
+</html>
